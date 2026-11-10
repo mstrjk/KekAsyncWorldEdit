@@ -125,7 +125,7 @@ KekAsyncWorldEdit did not go through a clean-room reimplementation. For the bene
 | `//smooth 1` | 2 ms | ❗ **1 ms** | 2 ms | 1 ms |
 | `//regen` | ❗ **34 ms** | 52 ms | 455 ms | 452 ms |
 
-## 1 blocks changed
+## 1 block changed
 
 | Command | KAWE (Paper) | KAWE (Folia) | FAWE (default) | FAWE (fast config) |
 |---|---|---|---|---|
@@ -142,7 +142,7 @@ KekAsyncWorldEdit did not go through a clean-room reimplementation. For the bene
 | `//regen` | ❗ **48 ms** | 94 ms | 455 ms | 451 ms |
 
 ## Stats for nerds
-- Each configuration ran 11 commands at 7 sizes (about 10M down to 1 changed blocks) on Minecraft 26.3 with one connected client. 
+- Each configuration ran 11 commands at 7 sizes (10M down to 1 changed blocks) on Minecraft 26.3 with one connected client. 
 - Every cell had 5 measured repeats after a discarded JVM warm-up pass, in a fixed-seed shuffled order, and each repeat started from the same clean world snapshot: untimed undo plus //clearhistory, view distance 16, simulation distance 10, 6 GB heap, and random ticks, mob spawning, mob griefing and fire spread disabled. 
 - The timer runs from command dispatch until the later of two moments: the result chat packet being written to the client socket, and the last block-change packet inside the edit's bounding box being written. 
 - Each cell reports the median of the five repeats.
