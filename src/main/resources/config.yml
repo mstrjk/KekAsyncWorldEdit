@@ -1,0 +1,64 @@
+queue:
+  parallel-threads: -1
+  command-threads: 4
+  tick-budget-ms: 40
+  max-in-flight: 8192
+  use-idle-time: true
+  idle-margin-ms: 3
+folia:
+  chunk-tasks: true
+  linger-ms: 3
+  first-hop-linger-ms: 3
+  linger-while-staging: true
+  stream-edits: false
+  # Preload chunks around the player as they begin typing a KAWE command, selecting a region, etc.
+  preload-while-type: true
+  max-preload-chunks: 64
+  # Stop preloading when resources fall below this threshold (in MB)
+  resource-threshold: 2000
+engine:
+  stream-edits: true
+  section-fill: true
+  direct-small-packets: true
+  bulk-chunk-threshold: 256
+  section-swap-min: 64
+  # Whether to update lighting after edits
+  relight: true
+messages:
+  # Whether to show timing information for commands in chat
+  show-timing: true
+# History survives restarts and is stored on disk. It can be used to undo/redo changes even after a server restart
+history:
+  size: 15
+  use-disk: true
+  delete-after-days: 7
+  keep-after-restart: 10
+paths:
+  schematics: schematics
+  history: history
+limits:
+  max-radius: -1
+  max-brush-radius: -1
+  max-superpickaxe-size: 5
+  confirm-area: 524288
+  default-change-limit: -1
+  max-change-limit: -1
+  butcher-default-radius: -1
+  max-butcher-radius: -1
+expression:
+  timeout-ms: 100
+  max-timeout-ms: 300
+generation:
+  unstuck: true
+navigation:
+  use-glass: true
+  wand-max-distance: 50
+schematics:
+  loadall-max-files: 64
+  loadall-max-bytes: 67108864
+region-restrictions: true
+# Use PDC tags to restrict tool usage to designated tools rather than any kind
+pdc-tool-tag: true
+# Developer
+debug:
+  timings: false

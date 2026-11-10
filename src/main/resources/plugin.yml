@@ -1,0 +1,155 @@
+name: KekAsyncWorldEdit
+main: teacommontea.kawe.Kawe
+version: "1.0.0"
+api-version: '26.1'
+load: STARTUP
+description: Kek Async WorldEdit
+authors: [ CommonTea ]
+folia-supported: true
+permissions:
+  kawe.bypass.regions:
+    default: op
+  kawe.bypass:
+    default: op
+    children:
+      kawe.bypass.regions: true
+      kawe.limit.unlimited: true
+  kawe.tips:
+    default: op
+  kawe.admin:
+    default: op
+  kawe.reload:
+    default: op
+  kawe.permpack.basic:
+    default: op
+    children:
+      kawe.selectregion: true
+      kawe.cancel: true
+      kawe.biome.info: true
+      kawe.biome.set: true
+      kawe.biome.list: true
+      kawe.chunkinfo: true
+      kawe.listchunks: true
+      kawe.clipboard.cut: true
+      kawe.clipboard.paste: true
+      kawe.schematic.formats: true
+      kawe.schematic.load: true
+      kawe.schematic.list: true
+      kawe.schematic.save: true
+      kawe.clipboard.clear: true
+      kawe.clipboard.copy: true
+      kawe.clipboard.lazycopy: true
+      kawe.clipboard.place: true
+      kawe.clipboard.download: true
+      kawe.clipboard.flip: true
+      kawe.clipboard.rotate: true
+      kawe.help: true
+      kawe.global-mask: true
+      kawe.global-transform: true
+      kawe.generation.cylinder: true
+      kawe.generation.sphere: true
+      kawe.generation.forest: true
+      kawe.generation.pumpkins: true
+      kawe.generation.pyramid: true
+      kawe.generation.shape: true
+      kawe.history.undo: true
+      kawe.history.redo: true
+      kawe.history.rollback: true
+      kawe.navigation.unstuck: true
+      kawe.navigation.ascend: true
+      kawe.navigation.descend: true
+      kawe.navigation.ceiling: true
+      kawe.navigation.thru.command: true
+      kawe.navigation.jumpto.command: true
+      kawe.navigation.up: true
+      kawe.region.hollow: true
+      kawe.region.line: true
+      kawe.region.curve: true
+      kawe.region.overlay: true
+      kawe.region.center: true
+      kawe.region.naturalize: true
+      kawe.region.walls: true
+      kawe.region.faces: true
+      kawe.region.smooth: true
+      kawe.region.move: true
+      kawe.region.forest: true
+      kawe.region.replace: true
+      kawe.region.stack: true
+      kawe.region.set: true
+      kawe.selection.pos: true
+      kawe.selection.chunk: true
+      kawe.selection.bound: true
+      kawe.selection.hpos: true
+      kawe.wand: true
+      kawe.wand.toggle: true
+      kawe.selection.contract: true
+      kawe.selection.outset: true
+      kawe.selection.inset: true
+      kawe.analysis.distr: true
+      kawe.analysis.count: true
+      kawe.analysis.sel: true
+      kawe.selection.size: true
+      kawe.selection.expand: true
+      kawe.selection.shift: true
+      kawe.snapshots.list: true
+      kawe.superpickaxe: true
+      kawe.superpickaxe.area: true
+      kawe.superpickaxe.recursive: true
+      kawe.brush.blendball: true
+      kawe.brush.erode: true
+      kawe.brush.pull: true
+      kawe.brush.circle: true
+      kawe.brush.recursive: true
+      kawe.brush.line: true
+      kawe.brush.spline: true
+      kawe.brush.surfacespline: true
+      kawe.brush.shatter: true
+      kawe.brush.stencil: true
+      kawe.brush.height: true
+      kawe.brush.layer: true
+      kawe.brush.populateschematic: true
+      kawe.brush.scatter: true
+      kawe.brush.splatter: true
+      kawe.brush.scattercommand: true
+      kawe.brush.copy: true
+      kawe.brush.command: true
+      kawe.brush.apply: true
+      kawe.brush.sphere: true
+      kawe.brush.cylinder: true
+      kawe.brush.clipboard: true
+      kawe.brush.smooth: true
+      kawe.brush.ex: true
+      kawe.brush.gravity: true
+      kawe.brush.options.range: true
+      kawe.brush.options.material: true
+      kawe.brush.options.size: true
+      kawe.brush.options.mask: true
+      kawe.brush.options.smask: true
+      kawe.brush.options.transform: true
+      kawe.brush.options.scroll: true
+      kawe.brush.options.visualize: true
+      kawe.tool.none: true
+      kawe.tool.deltree: true
+      kawe.tool.farwand: true
+      kawe.tool.lrbuild: true
+      kawe.tool.info: true
+      kawe.tool.tree: true
+      kawe.tool.replacer: true
+      kawe.tool.data-cycler: true
+      kawe.tool.flood-fill: true
+      kawe.tool.inspect: true
+      kawe.fill.recursive: true
+      kawe.drain: true
+      kawe.fixlava: true
+      kawe.fixwater: true
+      kawe.removeabove: true
+      kawe.removebelow: true
+      kawe.removenear: true
+      kawe.replacenear: true
+      kawe.snow: true
+      kawe.thaw: true
+      kawe.green: true
+      kawe.extinguish: true
+      kawe.calc: true
+      kawe.tips: true
+      kawe.fill: true
